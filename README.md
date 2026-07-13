@@ -1,5 +1,5 @@
-<h1 align="center">Olá 👋, eu sou o Erick Larssen</h1>
-<h3 align="center">Desenvolvedor FullStack | Java + Angular</h3>
+<h1 align="center">Olá 👋, eu sou o Érick Silva</h1>
+<h3 align="center">Desenvolvedor FullStack | Java + React</h3>
 
 <p align="center">
   <a href="https://github.com/ErickLarssen">
@@ -42,6 +42,6 @@
 ---
 
 ### 📫 Me encontre em:
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](link-do-seu-linkedin)
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](link-do-seu-instagram)
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:seu-email@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ericklarssen/)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/elarssen.design/)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ericklarssen@gmail.com)
