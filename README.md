@@ -1,5 +1,5 @@
-<h1 align="center">Olá 👋, eu sou o Érick Silva</h1>
-<h3 align="center">Desenvolvedor FullStack | Java + React</h3>
+<h1 align="center">Olá 👋, sou Érick Silva</h1>
+<h3 align="center">Desenvolvedor FullStack </h3>
 
 <p align="center">
   <a href="https://github.com/ErickLarssen">
@@ -10,10 +10,8 @@
 ---
 
 ### 🚀 Sobre mim
-- 🔭 Atualmente trabalhando em: **Projetos com Spring Boot e Angular**
-- 🌱 Estudando: **Java, Spring Boot, Angular, Banco de Dados**
-- 💬 Pergunta pra mim sobre: **Java, Front-end, Back-end**
-- ⚡ Curiosidade: **Adoro transformar ideias em código**
+- 🔭 Atualmente trabalhando em: **Projetos com Spring Boot e React**
+- 🌱 Estudando: **Java, Spring Boot, React, Banco de Dados**
 
 ---
 
@@ -28,15 +26,6 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="40" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="40" />
-</p>
-
----
-
-### 📊 Minhas Stats do Github
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ErickLarssen&show_icons=true&theme=tokyonight" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ErickLarssen&layout=compact&theme=tokyonight" />
 </p>
 
 ---
