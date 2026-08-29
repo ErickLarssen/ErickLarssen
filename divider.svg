@@ -1,0 +1,14 @@
+<svg width="1200" height="28" viewBox="0 0 1200 28" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Divisor decorativo dourado">
+  <defs>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D4A24C" stop-opacity="0"/>
+      <stop offset="15%" stop-color="#D4A24C" stop-opacity="0.55"/>
+      <stop offset="50%" stop-color="#E7C083" stop-opacity="0.9"/>
+      <stop offset="85%" stop-color="#D4A24C" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#D4A24C" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <line x1="0" y1="14" x2="1200" y2="14" stroke="url(#lineGrad)" stroke-width="1.4"/>
+  <rect x="596" y="10" width="8" height="8" fill="#E7C083" transform="rotate(45 600 14)"/>
+  <rect x="596" y="10" width="8" height="8" fill="none" stroke="#0D0D0F" stroke-width="0.6" transform="rotate(45 600 14)"/>
+</svg>
