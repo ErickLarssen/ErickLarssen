@@ -1,0 +1,49 @@
+name: ◈ Atualização diária do perfil
+
+on:
+  schedule:
+    - cron: "7 9 * * *"     # 09:07 UTC = 06:07 em Brasília
+  workflow_dispatch:         # botão "Run workflow" na aba Actions
+  push:
+    branches: [main]
+    paths: ["scripts/**", ".github/workflows/**"]
+
+permissions:
+  contents: write
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependências
+        run: pip install fonttools
+
+      - name: ◆ Princípio do dia
+        working-directory: scripts
+        run: python3 principio.py
+
+      - name: ◆ Telemetria do GitHub
+        working-directory: scripts
+        continue-on-error: true      # se a API falhar, mantém o SVG de ontem
+        env:
+          GH_USER: ${{ github.repository_owner }}
+          # ES_TOKEN: token pessoal clássico, salvo em Settings → Secrets → Actions.
+          #   read:user → conta as contribuições privadas
+          #   repo      → única forma de ler os acessos ao perfil (tráfego)
+          ES_TOKEN: ${{ secrets.ES_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 telemetria.py
+
+      - name: Commitar se algo mudou
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/ scripts/acessos.json 2>/dev/null || git add assets/
+          git diff --staged --quiet || git commit -m "◈ atualização diária: princípio do dia e telemetria"
+          git push

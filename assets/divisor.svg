@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 40" width="1000" height="40" role="img" aria-label="">
+<defs>
+    <linearGradient id="linha" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7FA6C9" stop-opacity="0"/><stop offset=".25" stop-color="#7FA6C9" stop-opacity=".35"/>
+      <stop offset=".5" stop-color="#E2AE61" stop-opacity=".9"/><stop offset=".75" stop-color="#7FA6C9" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#7FA6C9" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="faisca" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#fff"/><stop offset=".25" stop-color="#F5D79A" stop-opacity=".9"/><stop offset="1" stop-color="#D4A24C" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="rastro" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#D4A24C" stop-opacity="0"/><stop offset="1" stop-color="#F5D79A" stop-opacity=".9"/>
+    </linearGradient>
+    <filter id="brilho" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="3"/></filter>
+<style>
+      .sobe { animation: sobe 1s cubic-bezier(.2,.7,.3,1) both }
+      @keyframes sobe { from{opacity:0;transform:translateY(12px)} to{opacity:1;transform:translateY(0)} }
+      .surge { animation: surge 1.4s ease both }
+      @keyframes surge { from{opacity:0} to{opacity:1} }
+      .pisca { animation: pisca 2.6s ease-in-out infinite }
+      @keyframes pisca { 0%,100%{opacity:.25} 50%{opacity:1} }
+      @media (prefers-reduced-motion: reduce) { *{ animation:none !important } }
+      .corre { animation: corre 6.5s cubic-bezier(.6,0,.4,1) infinite }
+      @keyframes corre { 0%{transform:translateX(0);opacity:0} 8%{opacity:1} 92%{opacity:1} 100%{transform:translateX(880px);opacity:0} }
+      .pulsa { transform-box:fill-box; transform-origin:center; animation: pulsa 3.2s ease-in-out infinite }
+      @keyframes pulsa { 0%,100%{opacity:.45;transform:scale(.8)} 50%{opacity:1;transform:scale(1.25)} }
+      .gira { transform-box:fill-box; transform-origin:center; animation: gira 12s linear infinite }
+      @keyframes gira { to{transform:rotate(360deg)} }
+</style></defs>
+
+  <rect x="0" y="19.5" width="1000" height="1" fill="url(#linha)"/>
+  <rect x="80" y="17.0" width="1" height="6" fill="#7FA6C9" opacity="0.19"/><rect x="120" y="17.0" width="1" height="6" fill="#7FA6C9" opacity="0.21"/><rect x="160" y="17.0" width="1" height="6" fill="#7FA6C9" opacity="0.23"/><rect x="200" y="17.0" width="1" height="6" fill="#7FA6C9" opacity="0.25"/><rect x="240" y="17.0" width="1" height="6" fill="#7FA6C9" opacity="0.27"/><rect x="280" y="17.0" width="1" height="6" fill="#7FA6C9" opacity="0.29"/><rect x="320" y="17.0" width="1" height="6" fill="#7FA6C9" opacity="0.31"/><rect x="360" y="17.0" width="1" height="6" fill="#7FA6C9" opacity="0.33"/><rect x="400" y="17.0" width="1" height="6" fill="#7FA6C9" opacity="0.35"/><rect x="440" y="17.0" width="1" height="6" fill="#7FA6C9" opacity="0.37"/><rect x="560" y="17.0" width="1" height="6" fill="#7FA6C9" opacity="0.37"/><rect x="600" y="17.0" width="1" height="6" fill="#7FA6C9" opacity="0.35"/><rect x="640" y="17.0" width="1" height="6" fill="#7FA6C9" opacity="0.33"/><rect x="680" y="17.0" width="1" height="6" fill="#7FA6C9" opacity="0.31"/><rect x="720" y="17.0" width="1" height="6" fill="#7FA6C9" opacity="0.29"/><rect x="760" y="17.0" width="1" height="6" fill="#7FA6C9" opacity="0.27"/><rect x="800" y="17.0" width="1" height="6" fill="#7FA6C9" opacity="0.25"/><rect x="840" y="17.0" width="1" height="6" fill="#7FA6C9" opacity="0.23"/><rect x="880" y="17.0" width="1" height="6" fill="#7FA6C9" opacity="0.21"/><rect x="920" y="17.0" width="1" height="6" fill="#7FA6C9" opacity="0.19"/>
+  <g class="corre">
+    <rect x="20" y="19.25" width="80" height="1.5" fill="url(#rastro)"/>
+    <circle cx="100" cy="20.0" r="7" fill="url(#faisca)"/>
+  </g>
+  <circle class="pulsa" cx="500" cy="20.0" r="11" fill="#D4A24C" opacity=".5" filter="url(#brilho)"/>
+  <g class="gira"><path d="M500 11.0 L509 20.0 L500 29.0 L491 20.0Z" fill="none" stroke="#E2AE61" stroke-opacity=".55"/></g>
+  <path d="M500.0 15.5L504.5 20.0L500.0 24.5L495.5 20.0Z" fill="#F5D79A"/>
+  <path d="M470.0 18.2L471.8 20.0L470.0 21.8L468.2 20.0Z" fill="#D4A24C"/><path d="M530.0 18.2L531.8 20.0L530.0 21.8L528.2 20.0Z" fill="#D4A24C"/>
+</svg>
