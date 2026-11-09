@@ -9,7 +9,7 @@
 
 <br/><br/>
 
-<a href="https://ericksilva.dev"><img src="./assets/link-portfolio.svg" height="52" alt="Portfólio — ericksilva.dev" /></a>
+<a href="https://ericksilva.site"><img src="./assets/link-portfolio.svg" height="52" alt="Portfólio — ericksilva.site" /></a>
 <a href="https://www.linkedin.com/in/ericklarssen"><img src="./assets/link-linkedin.svg" height="52" alt="LinkedIn — in/ericklarssen" /></a>
 <a href="https://github.com/ErickLarssen"><img src="./assets/link-github.svg" height="52" alt="GitHub — ErickLarssen" /></a>
 
